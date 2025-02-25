@@ -34,15 +34,15 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Etapas educativas</a
+              <a class="nav-link" href="#ciclos-formativos"
+                >Ciclos formativos</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Método</a>
+              <a class="nav-link" href="#centro">Centro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Otras actividades</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -67,11 +67,11 @@
           incluso online, tenemos lo que buscas.
         </p>
 
-        <a class="btn btn-info my-4" href="">Empecemos Ya!</a>
+        <a class="btn btn-info my-4" href="#contacto">Empecemos Ya!</a>
       </div>
     </div>
 
-    <div class="container marketing section">
+    <div id="ciclos-formativos" class="container marketing section">
       <!-- Three columns of text below the carousel -->
 
       <div class="container py-5">
@@ -151,7 +151,7 @@
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider" />
+      <hr id="centro" class="featurette-divider" />
 
       <div class="row featurette">
         <div class="col-md-7">
@@ -326,74 +326,51 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <svg
-            class="bd-placeholder-img"
-            width="100%"
-            height="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-          </svg>
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p class="opacity-75">
-                Some representative placeholder content for the first slide of
-                the carousel.
-              </p>
-              <p>
-                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <svg
-            class="bd-placeholder-img"
-            width="100%"
-            height="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-          </svg>
+          <img src="img/carousel_1.jpg" alt="happy kids" />
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>
-                Some representative placeholder content for the second slide of
-                the carousel.
+              <h1>Interesado?</h1>
+              <p class="opacity-75">
+                Rellena nuestro formulario para ponerte en contacto con
+                nosotros.
               </p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              <p>
+                <a class="btn btn-lg btn-info" href="#contacto">Contactar</a>
+              </p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <svg
-            class="bd-placeholder-img"
-            width="100%"
-            height="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-          </svg>
+          <img src="img/carousel_2.jpg" alt="cambridge university" />
           <div class="container">
-            <div class="carousel-caption text-end">
-              <h1>One more for good measure.</h1>
+            <div class="carousel-caption">
+              <h1>Online</h1>
               <p>
-                Some representative placeholder content for the third slide of
-                this carousel.
+                Ahora puedes consultar el resultado de tu examen de Cambridge.
               </p>
               <p>
-                <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                <a
+                  class="btn btn-lg btn-danger"
+                  href="https://www.cam.ac.uk/"
+                  target="_blank"
+                  >Pagina cambridge</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel_3.jpg" alt="people learning" />
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Cursos de Inglés para Adultos</h1>
+              <p>
+                No sabes cual es tu nivel? Necesitas asesoramiento? Tenemos
+                diferentes opciones para ti, en función de tu objetivo o
+                necesidad.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-info" href="#contacto">Contactar</a>
               </p>
             </div>
           </div>
@@ -419,26 +396,106 @@
       </button>
     </div>
 
+    <div id="contacto" class="container w-50 mx-auto">
+      <div class="container mb-5">
+        <h1 class="h1 text-center mb-2">Contacto</h1>
+      </div>
+
+      <form>
+        <fieldset class="pb-2">
+          <div>
+            <label for="exampleInputName" class="form-label mt-4"
+              >Nombre y apellidos *</label
+            >
+            <input
+              type="name"
+              class="form-control"
+              id="exampleInputName"
+              aria-describedby="nameHelp"
+              placeholder=""
+            />
+          </div>
+        </fieldset>
+
+        <fieldset class="pb-4">
+          <div>
+            <label for="exampleInputEmail1" class="form-label mt-4"
+              >Direccion email *</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder=""
+              required
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >Tranquilo, no compartiremos tu correo con nadie.</small
+            >
+          </div>
+        </fieldset>
+
+        <fieldset class="pb-4">
+          <div class="form-check d-flex justify-content-center">
+            <input
+              class="form-check-input px-3"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              checked=""
+              required
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              Politica de privacidad
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-check d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+
     <div class="container">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
-          </li>
-        </ul>
-        <p class="text-center text-body-secondary">&copy; 2024 Company, Inc</p>
+      <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+        <script>
+          (function () {
+            var setting = {
+              query: "Aldabe Kalea, Vitoria-Gasteiz, Spain",
+              width: 300,
+              height: 400,
+              satellite: false,
+              zoom: 17,
+              placeId:
+                "EjFBbGRhYmUgS2FsZWEsIDAxMDEyIFZpdG9yaWEtR2FzdGVpeiwgQXJhYmEsIFNwYWluIi4qLAoUChIJ5Ui0Y2rCTw0ReuIrlVugmJgSFAoSCVuPPX03wk8NEclJq5GMt26c",
+              cid: "0x9898a05b952be27a",
+              coords: [42.851206, -2.6760071],
+              cityUrl: "/spain/vitoria-gasteiz-18370",
+              cityAnchorText: "Map of Vitoria-Gasteiz, Basque Country, Spain",
+              lang: "us",
+              queryString: "Aldabe Kalea, Vitoria-Gasteiz, Spain",
+              centerCoord: [42.851206, -2.6760071],
+              id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+              embed_id: "1197445",
+            };
+            var d = document;
+            var s = d.createElement("script");
+            s.src = "https://1map.com/js/script-for-user.js?embed_id=1197445";
+            s.async = true;
+            s.onload = function (e) {
+              window.OneMap.initMap(setting);
+            };
+            var to = d.getElementsByTagName("script")[0];
+            to.parentNode.insertBefore(s, to);
+          })();
+        </script>
+      </div>
+
+      <footer class="py-3 my-5">
+        <p class="text-center text-body-secondary">&copy; 2025 Academy, Inc</p>
       </footer>
     </div>
 
