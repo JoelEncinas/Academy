@@ -4,6 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academy</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./assets/css/features.css" />
@@ -55,13 +75,14 @@
     >
       <div class="container text-center px-5">
         <h1 class="py-4 display-1">Clases de inglés en Vitoria</h1>
-        <p class="h4 py-2">
+
+        <p class="h4 py-2 m-auto jumbotron-info">
           Tenemos cursos de inglés para niños desde los seis años de edad, y les
           acompañamos en toda su trayectoria hasta que consigan certificar
           niveles avanzados.
         </p>
 
-        <p class="h4 py-2">
+        <p class="h4 py-2 m-auto jumbotron-info">
           Nuestros cursos de inglés para ADULTOS no te dejarán indiferente, sea
           cual sea tu objetivo, en grupo, individual, a través de empresa o
           incluso online, tenemos lo que buscas.
@@ -458,50 +479,116 @@
       </form>
     </div>
 
-    <div class="container">
-      <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-        <script>
-          (function () {
-            var setting = {
-              query: "Aldabe Kalea, Vitoria-Gasteiz, Spain",
-              width: 300,
-              height: 400,
-              satellite: false,
-              zoom: 17,
-              placeId:
-                "EjFBbGRhYmUgS2FsZWEsIDAxMDEyIFZpdG9yaWEtR2FzdGVpeiwgQXJhYmEsIFNwYWluIi4qLAoUChIJ5Ui0Y2rCTw0ReuIrlVugmJgSFAoSCVuPPX03wk8NEclJq5GMt26c",
-              cid: "0x9898a05b952be27a",
-              coords: [42.851206, -2.6760071],
-              cityUrl: "/spain/vitoria-gasteiz-18370",
-              cityAnchorText: "Map of Vitoria-Gasteiz, Basque Country, Spain",
-              lang: "us",
-              queryString: "Aldabe Kalea, Vitoria-Gasteiz, Spain",
-              centerCoord: [42.851206, -2.6760071],
-              id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
-              embed_id: "1197445",
-            };
-            var d = document;
-            var s = d.createElement("script");
-            s.src = "https://1map.com/js/script-for-user.js?embed_id=1197445";
-            s.async = true;
-            s.onload = function (e) {
-              window.OneMap.initMap(setting);
-            };
-            var to = d.getElementsByTagName("script")[0];
-            to.parentNode.insertBefore(s, to);
-          })();
-        </script>
-      </div>
+    <div class="container pt-5">
+      <hr class="divider mt-4" />
 
-      <footer class="py-3 my-5">
-        <p class="text-center text-body-secondary">&copy; 2025 Academy, Inc</p>
+      <footer class="pt-5">
+        <div class="row d-flex align-items-top">
+          <div class="col-12 col-md-3 mb-3">
+            <h5>Índice</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a
+                  href="#ciclos-formativos"
+                  class="nav-link p-0 text-body-secondary"
+                  >Ciclos formativos</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#centro" class="nav-link p-0 text-body-secondary"
+                  >Centro</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <h5>Datos de contacto</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <span class="text-secondary">General Alava Bajo</span>
+              </li>
+              <li class="nav-item mb-2">
+                <span class="text-secondary">659 30 90 031</span>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="mailto:emaildeprueba@mail.com"
+                  class="nav-link p-0 text-body-secondary"
+                  >academy@mail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 mb-3">
+            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+              <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+              <script>
+                (function () {
+                  var setting = {
+                    query: "Aldabe Kalea, Vitoria-Gasteiz, Spain",
+                    width: "100%",
+                    height: 300,
+                    satellite: false,
+                    zoom: 17,
+                    placeId:
+                      "EjFBbGRhYmUgS2FsZWEsIDAxMDEyIFZpdG9yaWEtR2FzdGVpeiwgQXJhYmEsIFNwYWluIi4qLAoUChIJ5Ui0Y2rCTw0ReuIrlVugmJgSFAoSCVuPPX03wk8NEclJq5GMt26c",
+                    cid: "0x9898a05b952be27a",
+                    coords: [42.851206, -2.6760071],
+                    cityUrl: "/spain/vitoria-gasteiz-18370",
+                    cityAnchorText:
+                      "Map of Vitoria-Gasteiz, Basque Country, Spain",
+                    lang: "us",
+                    queryString: "Aldabe Kalea, Vitoria-Gasteiz, Spain",
+                    centerCoord: [42.851206, -2.6760071],
+                    id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                    embed_id: "1197445",
+                  };
+                  var d = document;
+                  var s = d.createElement("script");
+                  s.src =
+                    "https://1map.com/js/script-for-user.js?embed_id=1197445";
+                  s.async = true;
+                  s.onload = function (e) {
+                    window.OneMap.initMap(setting);
+                  };
+                  var to = d.getElementsByTagName("script")[0];
+                  to.parentNode.insertBefore(s, to);
+                })();
+              </script>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>&copy; 2025 Academy, Inc. Todos los derechos reservados.</p>
+          <ul id="social-accounts" class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="link-body-emphasis"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="link-body-emphasis"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- Link to external JS -->
-
-    <script src="./assets/bootstrap.bundle.min.js"></script>
   </body>
 </html>

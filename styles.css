@@ -73,6 +73,10 @@ table {
     color: white;
 }
 
+.jumbotron-info {
+    max-width: 600px;
+}
+
 .hover-box {
     position: relative;
     cursor: default;
@@ -200,7 +204,12 @@ table {
 
 @media (min-width: 768px) {
     .carousel-item img {
-        height: auto; /* Adjust height for tablets and larger */
+        height: auto;
+        /* Adjust height for tablets and larger */
 
     }
+}
+
+#social-accounts {
+    color: #000;
 }
