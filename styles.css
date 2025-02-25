@@ -127,3 +127,53 @@ table {
 #hover-adultos {
     background-color: #DE8867;
 }
+
+.offer-icons {
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.offer-icons:hover {
+    transform: scale(1.1);
+}
+
+#offer1,
+.offer1 {
+    color: #65A9B5;
+}
+
+#offer2,
+.offer2 {
+    color: #CEBE46;
+}
+
+#offer3,
+.offer3 {
+    color: #B64665;
+}
+
+#offer4,
+.offer4 {
+    color: #DE8867;
+}
+
+#offer5,
+.offer5 {
+    color: #1C85C6;
+}
+
+#offer6,
+.offer6 {
+    color: #7AC5DA;
+}
+
+#offer7,
+.offer7 {
+    color: #C3F1D5;
+}
+
+#offer8,
+.offer8 {
+    color: #cf2d5b;
+}
